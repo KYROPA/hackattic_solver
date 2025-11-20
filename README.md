@@ -191,3 +191,49 @@ if __name__ == "__main__":
 
 ```
     
+И конечный вывод что все прошло верно
+
+```
+
+SET
+SET
+SET
+SET
+SET
+ set_config
+------------
+
+(1 row)
+
+SET
+SET
+SET
+SET
+COMMENT
+CREATE EXTENSION
+COMMENT
+SET
+psql:/tmp/tmpeew4gxqv:42: ERROR:  tables declared WITH OIDS are not supported
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+ALTER TABLE
+COPY 87
+ setval
+--------
+     87
+(1 row)
+
+ALTER TABLE
+[*] Fetching problem from Hackattic...
+[*] Recreating challenge_db in Postgres...
+[*] Restoring dump into challenge_db...
+[*] Querying alive SSNs...
+[*] Got 32 SSNs: ['037-61-5291', '154-10-1047', '015-40-0347', '605-69-7022', '413-44-2246', '481-82-5375', '829-44-6199', '824-16-0495', '879-08-1318', '240-45-5535', '521-34-4303', '171-77-3421', '147-10-1536', '138-67-7604', '320-20-5454', '207-11-2247', '837-62-2152', '626-41-8716', '030-41-6953', '035-42-6805', '036-87-2436', '235-43-9796', '456-05-4324', '036-60-4702', '823-35-0387', '267-58-2646', '400-16-6903', '502-92-9355', '067-93-0667', '592-33-7040', '732-79-4653', '808-62-8172']
+[*] Submitting solution to Hackattic...
+Solve response: {"result": "passed"}
+[✓] Done.
+
+```
