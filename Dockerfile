@@ -1,0 +1,15 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY backup_restore_solve.py .
+
+ENV VAULT_ADDR=http://dev-vault:8200
+
+CMD ["python", "backup_restore_solve.py"]
+
